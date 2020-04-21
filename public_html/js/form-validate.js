@@ -25,7 +25,10 @@ $(document).ready(function(){
 		// rules here define what is good or bad input
 		// each rule starts with the form input element's NAME attribute
 		rules: {
-			name: {
+			fname: {
+				required: true
+			},
+			lname: {
 				required: true
 			},
 			email: {
@@ -40,9 +43,13 @@ $(document).ready(function(){
 
 		// error messages to display to the end user when rules above don't pass
 		messages: {
-			name: {
+			fname: {
 				required: "Please enter your name."
 			},
+			lname: {
+				required: "Please enter your name."
+			}
+			,
 			email: {
 				email: "Please enter a valid email address.",
 				required: "Please enter a valid email address."
@@ -76,4 +83,4 @@ $(document).ready(function(){
 
 	});/* end validate function here */
 
-});/*end document.ready() */
+});/*end document.ready()*/
